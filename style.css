@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(197, 61, 61);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bowl {
+    background-color: grey;
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.6) 10%, rgba(0,0,0,0.2) 30%, rgba(0,0,0, 0.7) 50%, black 60%, rgb(90, 37, 37));
+    border-radius: 0 0 25px 25px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50vh;
+    left: 30vw;
+}
+
+.white-bowl {
+    background-color: rgb(240, 231, 231);
+    /* background-image: linear-gradient(70deg, rgba(0,0,0, 0.2) 10%, rgba(0,0,0,0.1) 30%, rgba(0,0,0, 0.3) 40%, rgba(56, 35, 35, 0.6) 60%, rgb(202, 124, 124)); */
+    background-image:linear-gradient(70deg, rgba(0,0,0, 0.1) 10%, rgba(0,0,0,0) 30%, rgba(0,0,0, 0.2) 40%, rgba(56, 35, 35, 0.6)50%, rgb(202, 124, 124)), 
+        linear-gradient(-70deg, rgb(202, 124, 124)30%, rgba(56, 35, 35, 0.6)35%, rgba(0,0,0, 0)45%);
+    height: 100px;
+	width: 300px;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+
+    position: absolute;
+    top: calc(50vh + 100px);
+    left: calc(30vw + 300px);
+}
+
+.black-ball {
+    border-radius: 50%;
+    background-color: rgb(124, 157, 141);
+    background-image: radial-gradient(farthest-corner at 20px 35px, rgba(0,0,0,0) , rgba(0,0,0, 0.4), rgb(87, 43, 43));
+	height: 75px;
+	width: 75px;
+    position: absolute;
+    top: calc(50vh + 150px);
+    left: calc(30vw + 320px);
+}
+
+.leaf {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+#leaves {
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    top: calc(50vh - 450px);
+    left: calc(30vw - 100px);
+}
